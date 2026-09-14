@@ -127,7 +127,7 @@ export default function StudentVotePage() {
       <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white border border-gray-200 rounded-2xl shadow-sm p-8">
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold text-gray-900">Auditorium Clicker</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Pre-Service Teachers Development Seminar Clicker</h1>
             <p className="text-sm text-gray-500 mt-1">Enter your Student ID to join the live session.</p>
           </div>
 
