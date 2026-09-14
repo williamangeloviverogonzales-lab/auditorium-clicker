@@ -99,7 +99,7 @@ export default function DisplayScreen() {
       {/* Top Header Bar (Compact) */}
       <div className="flex justify-between items-center border-b border-slate-200 pb-3 shrink-0">
         <div>
-          <h1 className="text-lg font-bold tracking-tight text-slate-900">Paggiya In-service Training for Teachers</h1>
+          <h1 className="text-lg font-bold tracking-tight text-slate-900">Pre-Service Teachers Development Seminar</h1>
           <p className="text-xs text-slate-600">William Angelo V. Gonzales</p>
         </div>
         <div className="flex items-center space-x-3">
@@ -215,7 +215,7 @@ export default function DisplayScreen() {
 
       {/* Footer (Compact) */}
       <div className="text-center text-[11px] text-slate-500 pt-2 border-t border-slate-200 shrink-0">
-        Paggiya In-service Training for Teachers • Real-Time Classroom Response System
+        Pre-Service Teachers Development Seminar • Real-Time Classroom Response System
       </div>
     </main>
   )
