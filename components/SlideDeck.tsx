@@ -1070,7 +1070,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
           </h2>
 
           <p className="text-2xl font-light text-slate-700 tracking-wide max-w-2xl mx-auto">
-            Understand <span className="text-blue-600 font-bold">•</span> Plan <span className="text-blue-600 font-bold">•</span> Try <span className="text-blue-600 font-bold">•</span> Learn <span className="text-blue-600 font-bold">•</span> Look Back
+            Understand <span className="text-blue-600 font-bold">•</span> Plan <span className="text-blue-600 font-bold">•</span> Carry Out the Plan <span className="text-blue-600 font-bold">•</span> Look Back
           </p>
 
           <div className="pt-10 text-slate-500 font-medium text-base tracking-widest uppercase">
