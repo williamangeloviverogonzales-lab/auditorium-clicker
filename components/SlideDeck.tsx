@@ -442,15 +442,6 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
             )}
 
             {step >= 3 && (
-              <div className="p-5 bg-blue-50 border border-blue-200 rounded-2xl text-center space-y-2 animate-fadeIn shadow-sm">
-                <div className="text-sm text-blue-700 font-bold uppercase tracking-wider">Key Insight</div>
-                <p className="text-xl text-slate-800">
-                  Dividing any single digit by <strong className="text-slate-900">9</strong> repeats that digit!
-                </p>
-              </div>
-            )}
-
-            {step >= 4 && (
               <div className="p-6 bg-emerald-50 border-2 border-emerald-400 rounded-2xl text-center space-y-1 animate-fadeIn shadow-md">
                 <div className="text-sm text-emerald-700 font-bold uppercase tracking-wider">Solution</div>
                 <div className="text-4xl font-black text-slate-900">
