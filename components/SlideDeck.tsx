@@ -493,9 +493,6 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
                 <div className="text-3xl md:text-4xl font-black text-slate-900">
                   <MathInline math="8 \div 11" /> = <span className="text-emerald-600">0.727272...</span> ✓
                 </div>
-                <p className="text-sm text-slate-600 pt-1">
-                  (Other valid pairs under 40: <MathInline math="16 \div 22" /> or <MathInline math="24 \div 33" />)
-                </p>
               </div>
             )}
           </div>
