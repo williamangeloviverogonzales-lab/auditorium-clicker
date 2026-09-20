@@ -1112,13 +1112,12 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       const messages = [
         'Understand the problem.',
         "Don't stop at blaming.",
-        'Devise a plan.',
-        'Be part of the solution...',
+        'Devise a strategy.',
+        'Be part of the solution.',
       ];
 
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
-          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Final Message</span>
           <h2 className="text-5xl font-extrabold text-slate-900 leading-tight">Be Part of the Solution.</h2>
           
           <div className="space-y-4 text-left max-w-3xl mx-auto">
