@@ -961,7 +961,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
     return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
-        <h2 className="text-5xl font-extrabold text-slate-900">Solve a Simple Problem</h2>
+        <h2 className="text-5xl font-extrabold text-slate-900">Solve a Simpler Problem</h2>
 
         <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
           <div className="md:col-span-5 flex justify-center">
@@ -1019,7 +1019,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
-        <h2 className="text-5xl font-extrabold text-slate-900">Solve a Simple Problem</h2>
+        <h2 className="text-5xl font-extrabold text-slate-900">Solve a Simpler Problem</h2>
 
         <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 text-center space-y-6">
           <p className="text-2xl text-slate-700">
