@@ -409,6 +409,123 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
     )
 
     case 11:
+      return (
+        <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
+          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 (Continued)</span>
+          <h2 className="text-5xl font-extrabold text-slate-900">Guess and Check</h2>
+
+          <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 space-y-6">
+            <div className="text-center space-y-3">
+              <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
+                Problem 2A
+              </span>
+              <p className="text-3xl font-extrabold text-slate-900 leading-snug">
+                Find two numbers under 10 whose quotient is <span className="text-blue-600">0.7777...</span>
+              </p>
+            </div>
+
+            {step >= 1 && (
+              <div className="space-y-4 pt-2 animate-fadeIn">
+                <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-between text-lg text-slate-700">
+                  <span><strong>Guess 1:</strong> Try <MathInline math="3 \div 4" /></span>
+                  <span className="font-mono font-bold text-slate-900">0.75</span>
+                  <span className="text-amber-600 text-sm font-semibold bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Too small</span>
+                </div>
+              </div>
+            )}
+
+            {step >= 2 && (
+              <div className="space-y-4 animate-fadeIn">
+                <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-between text-lg text-slate-700">
+                  <span><strong>Guess 2:</strong> Try <MathInline math="4 \div 5" /></span>
+                  <span className="font-mono font-bold text-slate-900">0.80</span>
+                  <span className="text-amber-600 text-sm font-semibold bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Too large</span>
+                </div>
+              </div>
+            )}
+
+            {step >= 3 && (
+              <div className="p-5 bg-blue-50 border border-blue-200 rounded-2xl text-center space-y-2 animate-fadeIn shadow-sm">
+                <div className="text-sm text-blue-700 font-bold uppercase tracking-wider">Key Insight</div>
+                <p className="text-xl text-slate-800">
+                  Dividing any single digit by <strong className="text-slate-900">9</strong> repeats that digit!
+                </p>
+              </div>
+            )}
+
+            {step >= 4 && (
+              <div className="p-6 bg-emerald-50 border-2 border-emerald-400 rounded-2xl text-center space-y-1 animate-fadeIn shadow-md">
+                <div className="text-sm text-emerald-700 font-bold uppercase tracking-wider">Solution</div>
+                <div className="text-4xl font-black text-slate-900">
+                  <MathInline math="7 \div 9" /> = <span className="text-emerald-600">0.7777...</span> ✓
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )
+
+    case 12:
+      return (
+        <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
+          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 (Continued)</span>
+          <h2 className="text-5xl font-extrabold text-slate-900">Guess and Check</h2>
+
+          <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 space-y-6">
+            <div className="text-center space-y-3">
+              <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
+                Problem 2B
+              </span>
+              <p className="text-3xl font-extrabold text-slate-900 leading-snug">
+                Find two numbers under 40 whose quotient is <span className="text-blue-600">0.727272...</span>
+              </p>
+            </div>
+
+            {step >= 1 && (
+              <div className="space-y-3 pt-2 animate-fadeIn">
+                <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-between text-lg text-slate-700">
+                  <span><strong>Guess 1:</strong> Try <MathInline math="7 \div 10" /></span>
+                  <span className="font-mono font-bold text-slate-900">0.7000...</span>
+                  <span className="text-amber-600 text-sm font-semibold bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Too small</span>
+                </div>
+              </div>
+            )}
+
+            {step >= 2 && (
+              <div className="space-y-3 animate-fadeIn">
+                <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-between text-lg text-slate-700">
+                  <span><strong>Guess 2:</strong> Try <MathInline math="3 \div 4" /></span>
+                  <span className="font-mono font-bold text-slate-900">0.7500...</span>
+                  <span className="text-amber-600 text-sm font-semibold bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Too large</span>
+                </div>
+              </div>
+            )}
+
+            {step >= 3 && (
+              <div className="p-5 bg-blue-50 border border-blue-200 rounded-2xl text-center space-y-2 animate-fadeIn shadow-sm">
+                <div className="text-sm text-blue-700 font-bold uppercase tracking-wider">Pattern Alert</div>
+                <p className="text-xl text-slate-800">
+                  A 2-digit repeating pattern <span className="font-bold text-blue-600">.7272...</span> suggests dividing by <strong className="text-slate-900">99</strong> or its factor <strong className="text-slate-900">11</strong>!
+                </p>
+              </div>
+            )}
+
+            {step >= 4 && (
+              <div className="p-6 bg-emerald-50 border-2 border-emerald-400 rounded-2xl text-center space-y-2 animate-fadeIn shadow-md">
+                <div className="text-sm text-emerald-700 font-bold uppercase tracking-wider">Solution</div>
+                <div className="text-3xl md:text-4xl font-black text-slate-900">
+                  <MathInline math="8 \div 11" /> = <span className="text-emerald-600">0.727272...</span> ✓
+                </div>
+                <p className="text-sm text-slate-600 pt-1">
+                  (Other valid pairs under 40: <MathInline math="16 \div 22" /> or <MathInline math="24 \div 33" />)
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )
+
+    case 13:
       const nodes = [
       { id: 'A', x: 160, y: 20 },
       { id: 'B', x: 260, y: 75 },
@@ -516,7 +633,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 12:
+    case 14:
       const patternRows = [
       { expr: '1', square: '1²', val: '1' },
       { expr: '1 + 3', square: '2²', val: '4' },
@@ -577,7 +694,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 13:
+    case 15:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 4</span>
@@ -673,7 +790,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 14:
+    case 16:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 5</span>
@@ -771,7 +888,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 15:
+    case 17:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 5</span>
@@ -821,7 +938,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 16:
+    case 18:
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -866,7 +983,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 17:
+    case 19:
     return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -924,7 +1041,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 18:
+    case 20:
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -952,7 +1069,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 19:
+    case 21:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">For Future Teachers</span>
@@ -974,7 +1091,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 20: {
+    case 22: {
       const places = ['Country', 'Province', 'Barangay', 'Home', 'School', 'Classroom'];
 
       return (
@@ -1017,7 +1134,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       )
     }
 
-    case 21: {
+    case 23: {
       const messages = [
         'Understand the problem.',
         "Don't stop at blaming.",
@@ -1058,7 +1175,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       )
     }
 
-    case 22:
+    case 24:
       return (
         <div className="text-center space-y-7 my-auto max-w-5xl mx-auto animate-fadeIn">
           <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
