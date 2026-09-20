@@ -411,7 +411,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
     case 11:
       return (
         <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
-          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 (Continued)</span>
+          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 </span>
           <h2 className="text-5xl font-extrabold text-slate-900">Guess and Check</h2>
 
           <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 space-y-6">
@@ -456,16 +456,13 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
     case 12:
       return (
         <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
-          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 (Continued)</span>
+          <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1</span>
           <h2 className="text-5xl font-extrabold text-slate-900">Guess and Check</h2>
 
           <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 space-y-6">
             <div className="text-center space-y-3">
-              <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
-                Problem 2B
-              </span>
               <p className="text-3xl font-extrabold text-slate-900 leading-snug">
-                Find two numbers under 40 whose quotient is <span className="text-blue-600">0.727272...</span>
+                Find two numbers under 20 whose quotient is <span className="text-blue-600">0.727272...</span>
               </p>
             </div>
 
@@ -489,16 +486,8 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
               </div>
             )}
 
-            {step >= 3 && (
-              <div className="p-5 bg-blue-50 border border-blue-200 rounded-2xl text-center space-y-2 animate-fadeIn shadow-sm">
-                <div className="text-sm text-blue-700 font-bold uppercase tracking-wider">Pattern Alert</div>
-                <p className="text-xl text-slate-800">
-                  A 2-digit repeating pattern <span className="font-bold text-blue-600">.7272...</span> suggests dividing by <strong className="text-slate-900">99</strong> or its factor <strong className="text-slate-900">11</strong>!
-                </p>
-              </div>
-            )}
 
-            {step >= 4 && (
+            {step >= 3 && (
               <div className="p-6 bg-emerald-50 border-2 border-emerald-400 rounded-2xl text-center space-y-2 animate-fadeIn shadow-md">
                 <div className="text-sm text-emerald-700 font-bold uppercase tracking-wider">Solution</div>
                 <div className="text-3xl md:text-4xl font-black text-slate-900">
