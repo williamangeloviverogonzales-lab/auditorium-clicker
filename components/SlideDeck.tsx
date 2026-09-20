@@ -416,9 +416,6 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
 
           <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 space-y-6">
             <div className="text-center space-y-3">
-              <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
-                Problem 2A
-              </span>
               <p className="text-3xl font-extrabold text-slate-900 leading-snug">
                 Find two numbers under 10 whose quotient is <span className="text-blue-600">0.7777...</span>
               </p>
