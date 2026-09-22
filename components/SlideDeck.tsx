@@ -1231,14 +1231,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
     case 27:
       return (
         <div className="text-left space-y-6 my-auto max-w-6xl mx-auto w-full animate-fadeIn">
-          <div className="text-center space-y-2">
-            <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
-              Puzzle Mechanics
-            </span>
-            <h2 className="text-5xl font-black text-slate-900 tracking-tight">
-              Spellbound Rules
-            </h2>
-          </div>
+          
 
           <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Puzzle Image */}
