@@ -1201,7 +1201,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-      case 25:
+      case 26:
         return (
           <div className="text-center space-y-6 my-auto max-w-4xl mx-auto w-full animate-fadeIn">
             <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
