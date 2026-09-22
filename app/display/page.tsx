@@ -130,7 +130,7 @@ export default function DisplayScreen() {
               Live Results — Slide {currentSlide}
             </h2>
 
-            {currentSlide > 3 ? (
+            {currentSlide > 4 ? (
               <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-md max-h-[500px] overflow-y-auto space-y-3">
                 <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">
                   All Student Responses ({totalVotes})
