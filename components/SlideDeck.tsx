@@ -76,6 +76,36 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
 
     case 2:
       return (
+        <div className="text-center space-y-8 my-auto max-w-4xl mx-auto w-full animate-fadeIn">
+          <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
+            Interactive Poll
+          </span>
+          <h2 className="text-5xl font-black text-slate-900 tracking-tight">
+            How to Vote
+          </h2>
+          <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-10 space-y-6">
+            <p className="text-2xl text-slate-700">
+              To vote in the poll, open your browser and go to:
+            </p>
+            <div className="p-6 bg-blue-50 border-2 border-blue-400 rounded-2xl text-3xl md:text-4xl font-extrabold text-blue-600 break-all shadow-sm">
+              <a 
+                href="https://auditorium-clicker.vercel.app/vote" 
+                target="_blank" 
+                rel="noreferrer"
+                className="hover:underline"
+              >
+                https://auditorium-clicker.vercel.app/vote
+              </a>
+            </div>
+            <p className="text-xl text-slate-600 pt-2">
+              Input your <strong className="text-slate-900">Student Number</strong> to submit your response.
+            </p>
+          </div>
+        </div>
+      )
+
+    case 3:
+      return (
       <div className="space-y-8 text-center max-w-4xl mx-auto animate-fadeIn">
         <div className="space-y-3">
           <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
@@ -141,7 +171,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 3:
+    case 4:
       const mmwOptions = [
       { emoji: '🙄', title: 'The Heavy Sigh 🙄', desc: 'Thinking: "Do I really have to take math in college? Here we go again..."' },
       { emoji: '🥶', title: 'Cold Sweat 🥶', desc: 'Pure panic during exams, praying the formulas would magically memorize themselves.' },
@@ -196,7 +226,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 4:
+    case 5:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Warm-Up 1</span>
@@ -219,7 +249,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 5:
+    case 6:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Warm-Up 2</span>
@@ -242,7 +272,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 6:
+    case 7:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Warm-Up 3</span>
@@ -270,7 +300,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 7:
+    case 8:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Warm-Up 4</span>
@@ -294,7 +324,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 8:
+    case 9:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Warm-Up 5</span>
@@ -317,7 +347,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 9:
+    case 10:
       const polyaSteps = [
       ['1', 'Understand', 'What is known? What is unknown? What is being asked?'],
       ['2', 'Plan', 'What strategy might help? (Working backwards, drawing a diagram, etc.)'],
@@ -359,7 +389,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 10:
+    case 11:
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1</span>
@@ -408,7 +438,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 11:
+    case 12:
       return (
         <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1 </span>
@@ -453,7 +483,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 12:
+    case 13:
       return (
         <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 1</span>
@@ -499,7 +529,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 13:
+    case 14:
       const nodes = [
       { id: 'A', x: 160, y: 20 },
       { id: 'B', x: 260, y: 75 },
@@ -607,7 +637,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 14:
+    case 15:
       const patternRows = [
       { expr: '1', square: '1²', val: '1' },
       { expr: '1 + 3', square: '2²', val: '4' },
@@ -668,7 +698,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 15:
+    case 16:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 4</span>
@@ -764,7 +794,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 16:
+    case 17:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 5</span>
@@ -862,7 +892,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 17:
+    case 18:
       return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 5</span>
@@ -912,7 +942,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 18:
+    case 19:
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -957,7 +987,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 19:
+    case 20:
     return (
       <div className="text-left space-y-6 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -1015,7 +1045,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 20:
+    case 21:
       return (
       <div className="text-left space-y-7 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
         <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">Strategy 6</span>
@@ -1043,7 +1073,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       </div>
     )
 
-    case 21:
+    case 22:
       return (
         <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full">
           <span className="text-blue-600 font-semibold tracking-wide uppercase text-base">For Future Teachers</span>
@@ -1065,7 +1095,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
         </div>
       )
 
-    case 22: {
+    case 23: {
       const places = ['Country', 'Province', 'Barangay', 'Home', 'School', 'Classroom'];
 
       return (
@@ -1108,7 +1138,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       )
     }
 
-    case 23: {
+    case 24: {
       const messages = [
         'Understand the problem.',
         "Don't stop at blaming.",
@@ -1148,7 +1178,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
       )
     }
 
-    case 24:
+    case 25:
       return (
         <div className="text-center space-y-7 my-auto max-w-5xl mx-auto animate-fadeIn">
           <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
