@@ -1,4 +1,6 @@
 import { MathInline } from './MathText'
+import Image from 'next/image'
+import spellboundQr from './spellbound.png'
 
 export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number; step?: number }) {
   switch (slideIndex) {
@@ -1198,6 +1200,32 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
           </div>
         </div>
       )
+
+      case 25:
+        return (
+          <div className="text-center space-y-6 my-auto max-w-4xl mx-auto w-full animate-fadeIn">
+            <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
+              Bonus Challenge
+            </span>
+            <h2 className="text-5xl font-black text-slate-900 tracking-tight">
+              Spellbound Puzzle
+            </h2>
+            <p className="text-xl text-slate-600">
+              Scan the QR code below to access the problem-solving challenge!
+            </p>
+
+            <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 max-w-xs mx-auto flex flex-col items-center space-y-4">
+              <Image 
+                src={spellboundQr} 
+                alt="Spellbound Puzzle QR Code" 
+                className="w-64 h-64 object-contain rounded-2xl border border-slate-100 shadow-inner"
+              />
+              <p className="text-sm font-semibold text-slate-500">
+                Scan with your phone camera
+              </p>
+            </div>
+          </div>
+        )
 
     default:
       return (
