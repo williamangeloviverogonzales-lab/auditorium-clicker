@@ -189,8 +189,8 @@ export default function StudentVotePage() {
           <div>
             <p className="text-sm font-semibold text-green-600 mb-4 tracking-wide uppercase">🟢 Poll is Open! Cast your vote:</p>
 
-            {/* Check if current slide is short answer (Slides 4-22) or multiple choice (Slides 0-3) */}
-            {currentSlide > 3 ? (
+            {/* Check if current slide is short answer (Slides 5-22) or multiple choice (Slides 0-4) */}
+            {currentSlide > 4 ? (
               <form
                 onSubmit={async (e) => {
                   e.preventDefault()
