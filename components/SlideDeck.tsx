@@ -1,6 +1,7 @@
 import { MathInline } from './MathText'
 import Image from 'next/image'
 import spellboundQr from './spellbound.png'
+import spellPuzzle from './spell.png'
 
 export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number; step?: number }) {
   switch (slideIndex) {
@@ -1226,6 +1227,61 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
             </div>
           </div>
         )
+
+    case 27:
+      return (
+        <div className="text-left space-y-6 my-auto max-w-6xl mx-auto w-full animate-fadeIn">
+          <div className="text-center space-y-2">
+            <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
+              Puzzle Mechanics
+            </span>
+            <h2 className="text-5xl font-black text-slate-900 tracking-tight">
+              Spellbound Rules
+            </h2>
+          </div>
+
+          <div className="bg-white border border-slate-200 shadow-md rounded-3xl p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            {/* Puzzle Image */}
+            <div className="md:col-span-5 flex justify-center">
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-2xl shadow-inner">
+                <Image 
+                  src={spellPuzzle} 
+                  alt="Spellbound Sudoku Grid" 
+                  className="w-full max-w-xs md:max-w-none h-auto object-contain rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* Rules List */}
+            <div className="md:col-span-7 space-y-3 text-slate-700 text-base leading-relaxed">
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <strong className="text-slate-900 block font-bold text-lg mb-0.5">Normal Sudoku Rules</strong>
+                Place digits 1–9 such that every row, column, and 3×3 box contains each digit exactly once.
+              </div>
+
+              <div className="p-3 bg-blue-50/60 border border-blue-200/60 rounded-xl">
+                <strong className="text-blue-900 block font-bold text-lg mb-0.5">☁️ Dynamic Fog</strong>
+                Placing correct digits clears up fog somewhere across the grid. No guessing required!
+              </div>
+
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <strong className="text-slate-900 block font-bold text-lg mb-0.5">⚫ Kropki Dots</strong>
+                Digits separated by a black dot have a 1:2 ratio (one digit is double the other).
+              </div>
+
+              <div className="p-3 bg-emerald-50/60 border border-emerald-200/60 rounded-xl">
+                <strong className="text-emerald-900 block font-bold text-lg mb-0.5">🟩 Green Whispers Line</strong>
+                Adjacent digits along a green line differ by at least 5.
+              </div>
+
+              <div className="p-3 bg-amber-50/60 border border-amber-200/60 rounded-xl">
+                <strong className="text-amber-900 block font-bold text-lg mb-0.5">🟧 Orange Lines (Spellbound)</strong>
+                Digits on the same orange line have the same number of letters when spelled (e.g., <strong className="text-slate-900">4</strong> [FOUR] and <strong className="text-slate-900">9</strong> [NINE] both have four letters).
+              </div>
+            </div>
+          </div>
+        </div>
+      )
 
     default:
       return (
