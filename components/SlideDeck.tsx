@@ -76,7 +76,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
 
     case 2:
       return (
-        <div className="text-center space-y-8 my-auto max-w-4xl mx-auto w-full animate-fadeIn">
+        <div className="text-center space-y-8 my-auto max-w-5xl mx-auto w-full animate-fadeIn">
           <span className="px-4 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full text-sm font-semibold uppercase tracking-widest">
             Interactive Poll
           </span>
@@ -87,7 +87,7 @@ export default function SlideDeck({ slideIndex, step = 0 }: { slideIndex: number
             <p className="text-2xl text-slate-700">
               To vote in the poll, open your browser and go to:
             </p>
-            <div className="p-6 bg-blue-50 border-2 border-blue-400 rounded-2xl text-3xl md:text-4xl font-extrabold text-blue-600 break-all shadow-sm">
+            <div className="p-6 bg-blue-50 border-2 border-blue-400 rounded-2xl text-2xl md:text-3xl font-extrabold text-blue-600 shadow-sm whitespace-nowrap overflow-x-auto">
               <a 
                 href="https://auditorium-clicker.vercel.app/vote" 
                 target="_blank" 
